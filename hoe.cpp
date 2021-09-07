@@ -1,3 +1,5 @@
+/*Квадратное уравнение*/
+
 #include <iostream>
 #include <cmath>
 
