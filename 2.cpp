@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 int main() {
 	double a = 0;
 	char coil;
