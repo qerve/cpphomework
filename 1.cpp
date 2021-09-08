@@ -11,10 +11,10 @@ int main() {
 	cin >> b;
 	cout << "\nc = ";
 	cin >> c;
-	D = b*b - 4*a*c;
+	D = b*b*1.0 - 4.0*a*c;
 	if (D >= 0) {
-		x1 = -(b / (2*a)) - sqrt(b*b - 4*a*c)/(2*a);
-		x2 = -(b / (2*a)) + sqrt(b*b - 4*a*c)/(2*a);
+		x1 = -(b*1.0 / (2.0*a)) - sqrt(b*b*1.0 - 4.0*a*c)/(2.0*a);
+		x2 = -(b*1.0 / (2.0*a)) + sqrt(b*b*1.0 - 4.0*a*c)/(2.0*a);
 	}
 	else {
 	cout << "Корней нет" << endl;
