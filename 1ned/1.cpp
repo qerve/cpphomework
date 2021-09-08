@@ -16,7 +16,8 @@ int main() {
 		x1 = -(b*1.0 / (2.0*a)) - sqrt(b*b*1.0 - 4.0*a*c)/(2.0*a);
 		x2 = -(b*1.0 / (2.0*a)) + sqrt(b*b*1.0 - 4.0*a*c)/(2.0*a);
 	}
-	else {
+	else 
+	{
 	cout << "Корней нет" << endl;
 	}
 	cout << x1 << endl << x2 << endl;
