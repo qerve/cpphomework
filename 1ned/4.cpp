@@ -3,6 +3,7 @@
 
 using namespace std;
 
+
 int main()
 {
 	char prname[500], hik[7];
