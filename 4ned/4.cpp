@@ -48,3 +48,26 @@ void vivod(int x)
 		case 9:
 			std::cout << SEP;
 			break;
+		case 10:
+			std::cout << OCT;
+			break;
+		case 11:
+			std::cout << NOV;
+			break;
+		case 12:
+			std::cout << DEC;
+			break;
+		default:
+			std::cout << "Ты че?";
+	}
+}
+
+int main()
+{
+	int x = 0;
+	std::cout << "Введите номер месяца:\n";
+	std::cin >> x;
+	vivod(x);
+
+	return 0;
+}
