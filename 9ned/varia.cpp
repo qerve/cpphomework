@@ -1,6 +1,7 @@
 #include <iostream>
 #include <new>
 
+//пока не работает, проблемы с clang - скоро пофикшу
 template<typename T, typename... Args>
 auto coll(Args... args)
 {
