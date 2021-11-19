@@ -75,15 +75,15 @@ template< class T > struct remove_volatile<volatile T> { typedef T type; };
 template< class T >
 struct decay {
 private:
-    typedef typename std::remove_reference<T>::type U;
+    typedef typename remove_reference<T>::type U;
 public:
-    typedef typename std::conditional< 
-        std::is_array<U>::value,
-        typename std::remove_extent<U>::type*,
-        typename std::conditional< 
-            std::is_function<U>::value,
-            typename std::add_pointer<U>::type,
-            typename std::remove_cv<U>::type
+    typedef typename conditional< 
+        is_array<U>::value,
+        typename remove_extent<U>::type*,
+        typename conditional< 
+            is_function<U>::value,
+            typename add_pointer<U>::type,
+            typename remove_cv<U>::type
         >::type
     >::type type;
 };
