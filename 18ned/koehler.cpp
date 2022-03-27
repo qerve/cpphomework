@@ -12,10 +12,10 @@ int main()
 
     // buffer
     char* buffer = new char[101];
-        buffer[100] = 0;
+       // buffer[100] = 0;
     file.getline(buffer,100,'\n');
-    std::cout << "// Первая строка: " << buffer << "\n" << "// Ее размер: " << sizeof(buffer)-1 << std::endl;
-    int length = sizeof(buffer) - 1;
+    std::cout << "// Первая строка: " << buffer << "\n" << "// Ее размер: " << std::strlen(buffer) << std::endl;
+    int length = std::strlen(buffer)+1;
     delete [] buffer;
 
 
