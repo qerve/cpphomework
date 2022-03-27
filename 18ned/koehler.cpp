@@ -20,13 +20,15 @@ int main()
 
 
     // start
-    int str_num;
+    double str_num;
     std::cout << "Введите номер искомой строки: ";
     std::cin >> str_num;
+    if (str_num == 1) {str_num = 1.0/length + 1;}
     std::fstream F;
     // input + output
     F.open("3.txt", std::ios::in | std::ios::out);
     F.seekg((str_num-1)*length-1, std::ios::beg);
+
 
     // buffer2
     char* buffer2 = new char [length];
